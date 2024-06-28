@@ -1,6 +1,6 @@
 (kicad_sch (version 20230121) (generator eeschema)
 
-  (uuid 58512ee1-3375-4738-97f2-53f055c422ab)
+  (uuid d574b47d-f86a-4b22-8781-855fddb34010)
 
   (paper "A4")
 
@@ -987,7 +987,7 @@
     (property "Value" "4.7u" (at 245.11 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 242.2652 54.61 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 242.2652 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 241.3 50.8 0)
@@ -1001,7 +1001,7 @@
           (reference "C3") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a126528-6fa8-4cd4-ac38-dfc3256831d3"
-          (reference "C15") (unit 1)
+          (reference "C406") (unit 1)
         )
       )
     )
@@ -1032,7 +1032,7 @@
           (reference "#PWR06") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a126528-6fa8-4cd4-ac38-dfc3256831d3"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR0402") (unit 1)
         )
       )
     )
@@ -1047,7 +1047,7 @@
     (property "Value" "0.1u" (at 219.71 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 216.8652 54.61 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" (at 216.8652 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 215.9 50.8 0)
@@ -1061,7 +1061,7 @@
           (reference "C3") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a126528-6fa8-4cd4-ac38-dfc3256831d3"
-          (reference "C13") (unit 1)
+          (reference "C404") (unit 1)
         )
       )
     )
@@ -1070,7 +1070,7 @@
   (symbol (lib_id "MCU_ST_STM32F0:STM32F042C6Ux") (at 148.59 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 21fd8498-5bf1-469d-b36c-53c985bbfa47)
-    (property "Reference" "U3" (at 153.3241 152.4 0)
+    (property "Reference" "U401" (at 153.3241 152.4 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "STM32F042C6Ux" (at 153.3241 154.94 0)
@@ -1134,7 +1134,7 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a126528-6fa8-4cd4-ac38-dfc3256831d3"
-          (reference "U3") (unit 1)
+          (reference "U401") (unit 1)
         )
       )
     )
@@ -1165,7 +1165,7 @@
           (reference "#PWR027") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a126528-6fa8-4cd4-ac38-dfc3256831d3"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR0405") (unit 1)
         )
       )
     )
@@ -1196,7 +1196,7 @@
           (reference "#PWR06") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a126528-6fa8-4cd4-ac38-dfc3256831d3"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR0404") (unit 1)
         )
       )
     )
@@ -1211,7 +1211,7 @@
     (property "Value" "0.1u" (at 193.04 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 190.1952 54.61 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" (at 190.1952 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 189.23 50.8 0)
@@ -1225,7 +1225,7 @@
           (reference "C3") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a126528-6fa8-4cd4-ac38-dfc3256831d3"
-          (reference "C11") (unit 1)
+          (reference "C402") (unit 1)
         )
       )
     )
@@ -1240,7 +1240,7 @@
     (property "Value" "0.1u" (at 123.19 88.9 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 120.3452 91.44 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" (at 120.3452 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 119.38 87.63 0)
@@ -1254,7 +1254,7 @@
           (reference "C3") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a126528-6fa8-4cd4-ac38-dfc3256831d3"
-          (reference "C18") (unit 1)
+          (reference "C401") (unit 1)
         )
       )
     )
@@ -1285,7 +1285,7 @@
           (reference "#PWR027") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a126528-6fa8-4cd4-ac38-dfc3256831d3"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR0403") (unit 1)
         )
       )
     )
@@ -1300,7 +1300,7 @@
     (property "Value" "4.7u" (at 232.41 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 229.5652 54.61 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 229.5652 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 228.6 50.8 0)
@@ -1314,7 +1314,7 @@
           (reference "C3") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a126528-6fa8-4cd4-ac38-dfc3256831d3"
-          (reference "C14") (unit 1)
+          (reference "C405") (unit 1)
         )
       )
     )
@@ -1345,7 +1345,7 @@
           (reference "#PWR027") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a126528-6fa8-4cd4-ac38-dfc3256831d3"
-          (reference "#PWR033") (unit 1)
+          (reference "#PWR0401") (unit 1)
         )
       )
     )
@@ -1360,7 +1360,7 @@
     (property "Value" "1u" (at 270.51 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 267.6652 54.61 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 267.6652 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 266.7 50.8 0)
@@ -1374,7 +1374,7 @@
           (reference "C3") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a126528-6fa8-4cd4-ac38-dfc3256831d3"
-          (reference "C17") (unit 1)
+          (reference "C408") (unit 1)
         )
       )
     )
@@ -1389,7 +1389,7 @@
     (property "Value" "0.1u" (at 207.01 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 204.1652 54.61 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" (at 204.1652 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 203.2 50.8 0)
@@ -1403,7 +1403,7 @@
           (reference "C3") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a126528-6fa8-4cd4-ac38-dfc3256831d3"
-          (reference "C12") (unit 1)
+          (reference "C403") (unit 1)
         )
       )
     )
@@ -1418,7 +1418,7 @@
     (property "Value" "10n" (at 257.81 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 254.9652 54.61 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" (at 254.9652 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 254 50.8 0)
@@ -1432,7 +1432,7 @@
           (reference "C3") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a126528-6fa8-4cd4-ac38-dfc3256831d3"
-          (reference "C16") (unit 1)
+          (reference "C407") (unit 1)
         )
       )
     )

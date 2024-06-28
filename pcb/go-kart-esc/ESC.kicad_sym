@@ -54,6 +54,11 @@
         (number "5" (effects (font (size 1.27 1.27))))
       )
     )
+    (symbol "ATA6561_1_1"
+      (text "ATA6561\n" (at 5.08 -12.7 0)
+        (effects (font (size 1.27 1.27)))
+      )
+    )
   )
   (symbol "DRV8701P" (in_bom yes) (on_board yes)
     (property "Reference" "U" (at 6.35 -22.86 0)
@@ -203,6 +208,9 @@
       )
     )
     (symbol "INA185_1_1"
+      (text "INA185\n" (at 7.62 -3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
       (pin output line (at 8.89 0 180) (length 2.54)
         (name "~" (effects (font (size 1.27 1.27))))
         (number "1" (effects (font (size 1.27 1.27))))
@@ -280,6 +288,14 @@
       (polyline
         (pts
           (xy 0 2.54)
+          (xy 0 0)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 2.54)
           (xy 1.27 2.54)
         )
         (stroke (width 0) (type default))
@@ -287,9 +303,9 @@
       )
     )
     (symbol "VM_1_1"
-      (pin power_out line (at 0 0 90) (length 2.54)
-        (name "" (effects (font (size 1.27 1.27))))
-        (number "" (effects (font (size 1.27 1.27))))
+      (pin power_out line (at 0 0 90) (length 2.54) hide
+        (name "VM" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
       )
     )
   )

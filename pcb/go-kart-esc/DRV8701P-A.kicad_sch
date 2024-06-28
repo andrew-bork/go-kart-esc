@@ -242,6 +242,14 @@
         (polyline
           (pts
             (xy 0 2.54)
+            (xy 0 0)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
             (xy 1.27 2.54)
           )
           (stroke (width 0) (type default))
@@ -249,9 +257,9 @@
         )
       )
       (symbol "VM_1_1"
-        (pin power_out line (at 0 0 90) (length 2.54)
-          (name "" (effects (font (size 1.27 1.27))))
-          (number "" (effects (font (size 1.27 1.27))))
+        (pin power_out line (at 0 0 90) (length 2.54) hide
+          (name "VM" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -355,6 +363,58 @@
       (symbol "+4V_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
           (name "+4V" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "power:+BATT" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+BATT" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power battery" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+BATT\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+BATT_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+BATT_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+BATT" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -689,13 +749,13 @@
   (symbol (lib_id "ESC:DRV8701P") (at 138.43 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 06ed5c19-0e36-43be-b78c-2c992a01c836)
-    (property "Reference" "U1" (at 143.1641 114.3 0)
+    (property "Reference" "U201" (at 143.1641 114.3 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "~" (at 133.35 68.58 0)
+    (property "Value" "DRV8701PRGER" (at 133.35 68.58 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 133.35 68.58 0)
+    (property "Footprint" "Package_DFN_QFN:Texas_S-PVQFN-N24_EP2.1x2.1mm" (at 133.35 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 133.35 68.58 0)
@@ -729,10 +789,10 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "U1") (unit 1)
+          (reference "U201") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "U4") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "U501") (unit 1)
         )
       )
     )
@@ -741,7 +801,7 @@
   (symbol (lib_id "power:+4V") (at 205.74 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0a7f5efa-f61b-4457-bbaf-ec3f4f00ee2d)
-    (property "Reference" "#PWR019" (at 205.74 60.96 0)
+    (property "Reference" "#PWR0212" (at 205.74 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+4V" (at 205.74 52.07 0)
@@ -757,10 +817,10 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR0212") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "#PWR045") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "#PWR0512") (unit 1)
         )
       )
     )
@@ -769,13 +829,13 @@
   (symbol (lib_id "Device:C_Small") (at 157.48 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2f3bea64-4e52-4bc6-ad18-b1e55957c15e)
-    (property "Reference" "C1" (at 160.02 69.8563 0)
+    (property "Reference" "C201" (at 160.02 69.8563 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 160.02 72.3963 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 157.48 71.12 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 157.48 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 157.48 71.12 0)
@@ -786,10 +846,10 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "C1") (unit 1)
+          (reference "C201") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "C19") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "C501") (unit 1)
         )
       )
     )
@@ -798,7 +858,7 @@
   (symbol (lib_id "power:+3V3") (at 194.31 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3519947a-25ec-4c46-a028-814251582a0c)
-    (property "Reference" "#PWR018" (at 194.31 60.96 0)
+    (property "Reference" "#PWR0210" (at 194.31 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 194.31 52.07 0)
@@ -814,38 +874,10 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR0210") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "#PWR043") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "ESC:VM") (at 217.17 57.15 0) (unit 1)
-    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
-    (uuid 371ab54a-83ff-4aee-ac3c-cf5d9ca9f7c7)
-    (property "Reference" "#PWR021" (at 212.09 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VM" (at 217.17 52.07 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 217.17 57.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 217.17 57.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "" (uuid 4d5991bd-51ae-4c88-aa42-2df5156e9fac))
-    (instances
-      (project "go-kart-esc"
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "#PWR021") (unit 1)
-        )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "#PWR046") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "#PWR0510") (unit 1)
         )
       )
     )
@@ -854,13 +886,13 @@
   (symbol (lib_id "Device:C_Small") (at 194.31 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3a61851c-faf2-46b1-8cf7-11efc254962d)
-    (property "Reference" "C5" (at 196.85 62.2363 0)
+    (property "Reference" "C203" (at 196.85 62.2363 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 196.85 64.7763 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 194.31 63.5 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 194.31 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 194.31 63.5 0)
@@ -871,10 +903,10 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "C5") (unit 1)
+          (reference "C203") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "C21") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "C503") (unit 1)
         )
       )
     )
@@ -889,7 +921,7 @@
     (property "Value" "10k" (at 90.17 110.49 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 85.852 109.22 90)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" (at 85.852 109.22 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 87.63 109.22 0)
@@ -903,10 +935,78 @@
           (reference "R2") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "R6") (unit 1)
+          (reference "R201") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "R8") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "R501") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+BATT") (at 217.17 57.15 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 457c7bb0-5ebf-4972-ac96-dbc854b01338)
+    (property "Reference" "#PWR0601" (at 217.17 60.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+BATT" (at 217.17 52.07 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 217.17 57.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 217.17 57.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4f14e663-77b8-4380-bae3-83e39f6d6dba))
+    (instances
+      (project "go-kart-esc"
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/a459c41b-c6c3-40c7-8485-5a95e06155ac"
+          (reference "#PWR0601") (unit 1)
+        )
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
+          (reference "#PWR0301") (unit 1)
+        )
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
+          (reference "#PWR0209") (unit 1)
+        )
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "#PWR0509") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+BATT") (at 134.62 55.88 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 50f37bbf-b678-4bc7-b5fa-3f8ff84b21c9)
+    (property "Reference" "#PWR0601" (at 134.62 59.69 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+BATT" (at 134.62 50.8 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 134.62 55.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 134.62 55.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5fa84e63-95b9-40e5-ae13-8f186b148512))
+    (instances
+      (project "go-kart-esc"
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/a459c41b-c6c3-40c7-8485-5a95e06155ac"
+          (reference "#PWR0601") (unit 1)
+        )
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
+          (reference "#PWR0301") (unit 1)
+        )
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
+          (reference "#PWR0203") (unit 1)
+        )
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "#PWR0503") (unit 1)
         )
       )
     )
@@ -915,7 +1015,7 @@
   (symbol (lib_id "power:GND") (at 226.06 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 62be0b66-1a60-439c-b894-3a2e63c2a924)
-    (property "Reference" "#PWR022" (at 226.06 77.47 0)
+    (property "Reference" "#PWR0214" (at 226.06 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 226.06 76.2 0)
@@ -931,10 +1031,10 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR0214") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "#PWR047") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "#PWR0514") (unit 1)
         )
       )
     )
@@ -943,7 +1043,7 @@
   (symbol (lib_id "power:GND") (at 87.63 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6852e08a-8540-4988-a620-9d5813bb8143)
-    (property "Reference" "#PWR024" (at 87.63 137.16 0)
+    (property "Reference" "#PWR0202" (at 87.63 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 87.63 135.89 0)
@@ -959,10 +1059,10 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR0202") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "#PWR035") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "#PWR0502") (unit 1)
         )
       )
     )
@@ -971,13 +1071,13 @@
   (symbol (lib_id "Device:C_Small") (at 166.37 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6cc4a261-d0b7-4e89-ba48-8cf5a2676636)
-    (property "Reference" "C2" (at 168.91 77.4763 0)
+    (property "Reference" "C202" (at 168.91 77.4763 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 168.91 80.0163 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 166.37 78.74 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 166.37 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 166.37 78.74 0)
@@ -988,10 +1088,10 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "C2") (unit 1)
+          (reference "C202") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "C20") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "C502") (unit 1)
         )
       )
     )
@@ -1000,7 +1100,7 @@
   (symbol (lib_id "power:+3V3") (at 137.16 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 786eb6e9-3aac-4319-a2ec-f734df6a521b)
-    (property "Reference" "#PWR08" (at 137.16 64.77 0)
+    (property "Reference" "#PWR0204" (at 137.16 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 137.16 55.88 0)
@@ -1016,10 +1116,10 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR0204") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "#PWR037") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "#PWR0504") (unit 1)
         )
       )
     )
@@ -1028,13 +1128,13 @@
   (symbol (lib_id "Device:C_Small") (at 205.74 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8121077d-b256-4543-8d36-a26fd60eb761)
-    (property "Reference" "C6" (at 208.28 62.2363 0)
+    (property "Reference" "C204" (at 208.28 62.2363 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 208.28 64.7763 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 205.74 63.5 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 205.74 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 205.74 63.5 0)
@@ -1045,10 +1145,10 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "C6") (unit 1)
+          (reference "C204") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "C22") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "C504") (unit 1)
         )
       )
     )
@@ -1063,7 +1163,7 @@
     (property "Value" "10k" (at 90.17 123.19 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 85.852 121.92 90)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" (at 85.852 121.92 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 87.63 121.92 0)
@@ -1077,10 +1177,10 @@
           (reference "R2") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "R7") (unit 1)
+          (reference "R202") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "R9") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "R502") (unit 1)
         )
       )
     )
@@ -1089,7 +1189,7 @@
   (symbol (lib_id "power:GND") (at 147.32 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9421ad1c-230f-495b-9074-e2b2c6af4d5c)
-    (property "Reference" "#PWR025" (at 147.32 68.58 0)
+    (property "Reference" "#PWR0207" (at 147.32 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 147.32 67.31 0)
@@ -1105,10 +1205,10 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR0207") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "#PWR040") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "#PWR0507") (unit 1)
         )
       )
     )
@@ -1117,7 +1217,7 @@
   (symbol (lib_id "ESC:VM") (at 157.48 64.77 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 9c009d2b-64d9-4e1b-9e9b-e5ee0b568e5b)
-    (property "Reference" "#PWR07" (at 152.4 62.23 0)
+    (property "Reference" "#PWR0126" (at 152.4 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VM" (at 157.48 59.69 0)
@@ -1129,14 +1229,14 @@
     (property "Datasheet" "" (at 157.48 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "" (uuid 0b3dbe42-de7f-4718-9d12-91892917cd00))
+    (pin "1" (uuid b177c893-8ae9-4871-b52f-7e7144c36f7d))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR0126") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "#PWR042") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "#PWR0131") (unit 1)
         )
       )
     )
@@ -1145,7 +1245,7 @@
   (symbol (lib_id "power:+4V") (at 87.63 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b091baa2-9276-466f-b26b-bd58f6016edf)
-    (property "Reference" "#PWR023" (at 87.63 102.87 0)
+    (property "Reference" "#PWR0201" (at 87.63 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+4V" (at 87.63 93.98 0)
@@ -1161,38 +1261,10 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR0201") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "#PWR034") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "ESC:VM") (at 134.62 55.88 0) (unit 1)
-    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
-    (uuid c074a1f7-5509-42fa-8619-5f25ae13e522)
-    (property "Reference" "#PWR02" (at 129.54 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VM" (at 134.62 50.8 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 134.62 55.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 134.62 55.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "" (uuid 39531e7a-2093-490c-a2a5-3e133a182064))
-    (instances
-      (project "go-kart-esc"
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "#PWR02") (unit 1)
-        )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "#PWR036") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "#PWR0501") (unit 1)
         )
       )
     )
@@ -1201,7 +1273,7 @@
   (symbol (lib_id "power:GND") (at 140.97 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cb868287-9eed-4519-8a55-d1f9da7333e0)
-    (property "Reference" "#PWR01" (at 140.97 129.54 0)
+    (property "Reference" "#PWR0206" (at 140.97 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 140.97 128.27 0)
@@ -1217,10 +1289,10 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR0206") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "#PWR039") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "#PWR0506") (unit 1)
         )
       )
     )
@@ -1229,13 +1301,13 @@
   (symbol (lib_id "Device:C_Small") (at 217.17 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ce1a4d50-3611-43af-a245-89e0076d5001)
-    (property "Reference" "C7" (at 219.71 62.2363 0)
+    (property "Reference" "C205" (at 219.71 62.2363 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 219.71 64.7763 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 217.17 63.5 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 217.17 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 217.17 63.5 0)
@@ -1246,10 +1318,10 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "C7") (unit 1)
+          (reference "C205") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "C23") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "C505") (unit 1)
         )
       )
     )
@@ -1258,7 +1330,7 @@
   (symbol (lib_id "power:+4V") (at 139.7 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d0f75f18-023e-4aa4-9a8e-1136cf3417bb)
-    (property "Reference" "#PWR09" (at 139.7 68.58 0)
+    (property "Reference" "#PWR0205" (at 139.7 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+4V" (at 139.7 59.69 0)
@@ -1274,10 +1346,10 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR0205") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "#PWR038") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "#PWR0505") (unit 1)
         )
       )
     )
@@ -1286,13 +1358,13 @@
   (symbol (lib_id "Device:C_Small") (at 226.06 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d2b5b906-700b-4c02-a172-6696c48771e4)
-    (property "Reference" "C8" (at 228.6 62.2363 0)
+    (property "Reference" "C206" (at 228.6 62.2363 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 228.6 64.7763 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 226.06 63.5 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 226.06 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 226.06 63.5 0)
@@ -1303,10 +1375,10 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "C8") (unit 1)
+          (reference "C206") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "C24") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "C506") (unit 1)
         )
       )
     )
@@ -1315,7 +1387,7 @@
   (symbol (lib_id "power:GND") (at 156.21 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dd0367f0-d949-4e30-a28e-6b0a9975be1e)
-    (property "Reference" "#PWR026" (at 156.21 115.57 0)
+    (property "Reference" "#PWR0208" (at 156.21 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 156.21 114.3 0)
@@ -1331,10 +1403,10 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR0208") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "#PWR041") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "#PWR0508") (unit 1)
         )
       )
     )
@@ -1343,7 +1415,7 @@
   (symbol (lib_id "power:GND") (at 194.31 69.85 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ff6407b7-56ce-4aac-a0dd-889cf6bf4c5e)
-    (property "Reference" "#PWR020" (at 194.31 76.2 0)
+    (property "Reference" "#PWR0211" (at 194.31 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 194.31 74.93 0)
@@ -1359,10 +1431,10 @@
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR0211") (unit 1)
         )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/046d7983-cd39-493f-9ca6-9403aac50e62"
-          (reference "#PWR044") (unit 1)
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "#PWR0511") (unit 1)
         )
       )
     )

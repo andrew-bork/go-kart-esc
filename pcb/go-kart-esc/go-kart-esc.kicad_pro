@@ -434,7 +434,7 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 0,
+    "annotate_start_num": 400,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
       "dashed_lines_gap_length_ratio": 3.0,
@@ -457,6 +457,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
@@ -485,11 +493,11 @@
       "STM32F042"
     ],
     [
-      "046d7983-cd39-493f-9ca6-9403aac50e62",
+      "273f23de-e221-4afe-873d-53a6030e7e3a",
       "DRV8701P-A1"
     ],
     [
-      "49a20c67-eeb7-49f1-8210-196c79304ab5",
+      "a459c41b-c6c3-40c7-8485-5a95e06155ac",
       "Power-A1"
     ],
     [
