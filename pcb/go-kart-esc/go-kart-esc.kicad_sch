@@ -1437,7 +1437,7 @@
           (reference "#PWR021") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57"
-          (reference "#PWR0102") (unit 1)
+          (reference "#PWR0123") (unit 1)
         )
       )
     )
@@ -1688,7 +1688,7 @@
           (reference "#PWR0301") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57"
-          (reference "#PWR0123") (unit 1)
+          (reference "#PWR0102") (unit 1)
         )
       )
     )

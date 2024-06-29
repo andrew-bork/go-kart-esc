@@ -205,10 +205,6 @@
           (name "nFAULT" (effects (font (size 1.27 1.27))))
           (number "9" (effects (font (size 1.27 1.27))))
         )
-        (pin unspecified line (at -2.54 -24.13 90) (length 2.54)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "PPAD" (effects (font (size 1.27 1.27))))
-        )
       )
       (symbol "DRV8701P_0_1"
         (rectangle (start -11.43 20.32) (end 11.43 -21.59)
@@ -216,50 +212,10 @@
           (fill (type none))
         )
       )
-    )
-    (symbol "ESC:VM" (power) (in_bom no) (on_board no)
-      (property "Reference" "#PWR" (at -5.08 2.54 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "VM" (at 0 3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "VM_0_1"
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy -1.27 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 1.27 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "VM_1_1"
-        (pin power_out line (at 0 0 90) (length 2.54) hide
-          (name "VM" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
+      (symbol "DRV8701P_1_0"
+        (pin unspecified line (at -2.54 -24.13 90) (length 2.54)
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "25" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -785,7 +741,7 @@
     (pin "7" (uuid 45835233-78b3-447e-bd10-6cdb232c86e9))
     (pin "8" (uuid 2918e2f4-7a2d-4eff-8d9b-1897a596ade6))
     (pin "9" (uuid 5458d4fc-e696-45d3-b349-8f0c6dabcef2))
-    (pin "PPAD" (uuid 50fd11e1-3b72-46e7-8f72-a953b0789be3))
+    (pin "25" (uuid 3d2c65ca-eb61-4b31-ba23-5766618e568c))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
@@ -969,10 +925,10 @@
           (reference "#PWR0301") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "#PWR0209") (unit 1)
+          (reference "#PWR0213") (unit 1)
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
-          (reference "#PWR0509") (unit 1)
+          (reference "#PWR0513") (unit 1)
         )
       )
     )
@@ -1007,6 +963,40 @@
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
           (reference "#PWR0503") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+BATT") (at 157.48 64.77 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 5a999d69-a3c7-4c68-ac0f-bd62f2cbc07e)
+    (property "Reference" "#PWR0601" (at 157.48 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+BATT" (at 157.48 59.69 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 157.48 64.77 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 157.48 64.77 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid cf4eafed-9ee4-466d-af7e-e62e6d25c6c7))
+    (instances
+      (project "go-kart-esc"
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/a459c41b-c6c3-40c7-8485-5a95e06155ac"
+          (reference "#PWR0601") (unit 1)
+        )
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
+          (reference "#PWR0301") (unit 1)
+        )
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
+          (reference "#PWR0209") (unit 1)
+        )
+        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
+          (reference "#PWR0509") (unit 1)
         )
       )
     )
@@ -1074,10 +1064,10 @@
     (property "Reference" "C202" (at 168.91 77.4763 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1u" (at 168.91 80.0163 0)
+    (property "Value" "0.1u" (at 168.91 80.0163 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 166.37 78.74 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" (at 166.37 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 166.37 78.74 0)
@@ -1209,34 +1199,6 @@
         )
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
           (reference "#PWR0507") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "ESC:VM") (at 157.48 64.77 0) (unit 1)
-    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
-    (uuid 9c009d2b-64d9-4e1b-9e9b-e5ee0b568e5b)
-    (property "Reference" "#PWR0126" (at 152.4 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VM" (at 157.48 59.69 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 157.48 64.77 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 157.48 64.77 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b177c893-8ae9-4871-b52f-7e7144c36f7d))
-    (instances
-      (project "go-kart-esc"
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/2a07445c-1516-44d0-a079-c83f7310c200"
-          (reference "#PWR0126") (unit 1)
-        )
-        (path "/5a70b585-4866-4f79-8013-f2242aeded57/273f23de-e221-4afe-873d-53a6030e7e3a"
-          (reference "#PWR0131") (unit 1)
         )
       )
     )
