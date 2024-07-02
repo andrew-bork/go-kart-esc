@@ -1,6 +1,6 @@
 (kicad_sch (version 20230121) (generator eeschema)
 
-  (uuid 0632592b-f702-40aa-8bab-8ce8e44d0cd4)
+  (uuid 73c8c82b-03eb-4382-bbfc-487e2e270ff3)
 
   (paper "A4")
 
@@ -1017,8 +1017,8 @@
     (property "Datasheet" "~" (at 229.87 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 40d2c4dd-a226-48ee-a0a4-da3778bbf824))
-    (pin "2" (uuid 87871fcc-0835-4351-bd95-e9e38f424ae5))
+    (pin "1" (uuid b96083a3-fc38-419e-89bd-4256eb6d6bca))
+    (pin "2" (uuid 2587b1c2-2613-4e8d-9329-04946824d0c7))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
@@ -1046,12 +1046,12 @@
     (property "Datasheet" "" (at 134.62 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 540dd426-9f16-4586-acc0-55ad3b948251))
-    (pin "2" (uuid 12679307-5980-4834-899e-a011791dfe30))
-    (pin "3" (uuid 0b22c651-f451-44ea-a406-d8d0ce447d2b))
-    (pin "4" (uuid ef663481-801a-497d-9c82-1f71962a2524))
-    (pin "5" (uuid 97d264f6-37fd-4d06-99c1-7ef66b9b0de1))
-    (pin "6" (uuid d19a1dea-953e-4944-9979-d4f7c2a6b906))
+    (pin "1" (uuid 6decd4f5-fbd8-4bc3-a699-ac8044778190))
+    (pin "2" (uuid e53a2efb-79ee-42ff-a598-f444a80f433f))
+    (pin "3" (uuid 848c6e53-39cb-46ed-979c-736acebf3bc7))
+    (pin "4" (uuid d193a5d7-c5c7-4954-997c-5b967ecd4d7f))
+    (pin "5" (uuid 300e261b-aaf6-47e8-8674-25b6b63dc03f))
+    (pin "6" (uuid 3ed2b5a3-6bd3-4b28-aa53-b511319ff16e))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
@@ -1079,11 +1079,11 @@
     (property "Datasheet" "http://www.ti.com/lit/gpn/csd19533q5a" (at 162.56 90.17 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (pin "1" (uuid 77960280-4e83-4a6a-abc2-f3cc1f7ee605))
-    (pin "2" (uuid ad4a3f89-8f3f-4e17-81a7-eff7b3bf4175))
-    (pin "3" (uuid 26f07956-f19d-46be-b704-1c686628a287))
-    (pin "4" (uuid f22b4424-3032-4b56-85bb-d9c08c3f2254))
-    (pin "5" (uuid f80a5fd2-8871-43fe-a861-950b131c74cb))
+    (pin "1" (uuid 6619b80e-68d5-4a86-a151-8235e73aa447))
+    (pin "2" (uuid 3d06aaed-9287-4033-b7e1-ef334bdc66a0))
+    (pin "3" (uuid d8716b19-5676-44be-8c96-3c86ff645e7f))
+    (pin "4" (uuid d8f8507a-f674-494e-949b-59f93e580a92))
+    (pin "5" (uuid 072679e8-e77d-40ce-a24a-9c810b4523f2))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
@@ -1111,8 +1111,8 @@
     (property "Datasheet" "~" (at 90.17 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 599cb077-a52d-4d49-82c1-7a463fb932d8))
-    (pin "2" (uuid b84828db-c957-4402-b696-d3fe520d8807))
+    (pin "1" (uuid 0185d16e-2961-40ee-a8ab-1100e4b9bf98))
+    (pin "2" (uuid 16f8f293-745e-48ce-b261-d676e2cdf7dc))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
@@ -1140,8 +1140,8 @@
     (property "Datasheet" "~" (at 116.84 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ca249f12-156b-4a55-9e86-b4c009bd4b43))
-    (pin "2" (uuid b542ac85-5fa4-4262-9327-26b106a0e429))
+    (pin "1" (uuid 07df6753-89a8-452a-8d99-66b725a19b75))
+    (pin "2" (uuid a7262eaa-6b5c-484b-ad7c-386d970cd877))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
@@ -1169,8 +1169,8 @@
     (property "Datasheet" "~" (at 195.58 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 03d4830d-b0cc-44c1-ab3a-a139f02ce345))
-    (pin "2" (uuid 43866033-4460-467c-ad3a-aa9ea47399d8))
+    (pin "1" (uuid c328fcb3-cfdd-40c8-8b5c-afa0d8853e18))
+    (pin "2" (uuid 7f3fb4b5-3b2e-48e0-8bda-27f0f15b0b5f))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
@@ -1198,11 +1198,11 @@
     (property "Datasheet" "http://www.ti.com/lit/gpn/csd19533q5a" (at 162.56 74.93 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (pin "1" (uuid b7e8f93e-d5b2-4d72-a19c-9e444b9cf41d))
-    (pin "2" (uuid 1059d059-03f0-4029-b216-1389aa60dbbd))
-    (pin "3" (uuid 93496d6a-8b67-48a1-beea-43f1778ad0df))
-    (pin "4" (uuid a27ef0c6-06e5-476d-a01c-a1b1d7f23615))
-    (pin "5" (uuid 51afc4ef-09b0-4f0a-93e0-e1973232bb49))
+    (pin "1" (uuid 4c409745-b27a-43f0-9d1b-fb7f8e4b0f42))
+    (pin "2" (uuid 531623a3-d8c1-400b-91f1-421e0dab5969))
+    (pin "3" (uuid 4e8c42a8-2a52-4ced-ad01-941854d55e6b))
+    (pin "4" (uuid 249d9592-cb05-4299-b420-9b9f8e87c624))
+    (pin "5" (uuid 8c44b25d-dbd2-4fc1-89dd-415003b29b12))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
@@ -1258,8 +1258,8 @@
     (property "Datasheet" "~" (at 194.31 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ad2290a3-5b85-4258-947b-01723620276f))
-    (pin "2" (uuid 572be9aa-b90f-47a2-8a6e-0b741baf8e80))
+    (pin "1" (uuid 6f0ab691-66ef-4147-863b-c5bef05ef204))
+    (pin "2" (uuid eb1c317b-776a-464c-9a7a-6651301d4279))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
@@ -1287,8 +1287,8 @@
     (property "Datasheet" "~" (at 229.87 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2ed98af6-203c-454f-b0d8-9352adecb0c5))
-    (pin "2" (uuid ed7a6fbf-3aee-473d-825b-b3d934f9e433))
+    (pin "1" (uuid ea3e1607-39f8-4ef9-8ca0-41a101d83fa9))
+    (pin "2" (uuid 4241436e-1289-4344-b9e1-cce35394adc9))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
@@ -1406,8 +1406,8 @@
     (property "Datasheet" "~" (at 154.94 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1b54a8ba-0861-4734-8d78-9db59d64c416))
-    (pin "2" (uuid 378d53f1-30a1-4640-ab70-a92210db8a7b))
+    (pin "1" (uuid 2a1b3d5b-d552-4920-9f48-d964a1b82907))
+    (pin "2" (uuid 2b0c663e-8b2e-49d5-a4db-b654957cebe3))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
@@ -1440,11 +1440,11 @@
     (property "Datasheet" "http://www.ti.com/lit/gpn/csd19533q5a" (at 83.82 87.63 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (pin "1" (uuid f9348fea-d726-4f6e-a5c2-7aedbe426847))
-    (pin "2" (uuid eb3eed19-0eba-42cc-a769-b9ce398bb861))
-    (pin "3" (uuid aa215eb5-7d38-4645-b0b7-0e4c2c97ca16))
-    (pin "4" (uuid 448ed90d-6ae3-4161-9c3a-bc11ad40bf86))
-    (pin "5" (uuid 5954cfb4-c369-4d74-83ac-d693ca81d05d))
+    (pin "1" (uuid ebf25707-d41f-4cd6-ac4e-69df6404c0a9))
+    (pin "2" (uuid 27b9b0d0-465e-4b54-8a11-1680345fe703))
+    (pin "3" (uuid 779ad36c-f5bc-4a4c-8277-605513980286))
+    (pin "4" (uuid caa7623a-e753-4456-92c2-0170a2f99372))
+    (pin "5" (uuid 36db7198-b53a-4341-b23b-12a45c2bd3ea))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
@@ -1534,7 +1534,7 @@
     (property "Datasheet" "~" (at 97.79 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 33fc1817-f8e2-41c0-9cd8-1ec9e7a37605))
+    (pin "1" (uuid b6b73698-cd24-494f-b908-92b45b85ddc6))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
@@ -1562,8 +1562,8 @@
     (property "Datasheet" "~" (at 162.56 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6d0e3d04-32ef-476d-9afd-2651c022383b))
-    (pin "2" (uuid 7892a909-490c-4050-83b6-9944867e664a))
+    (pin "1" (uuid 963c5354-e5cf-4855-8f81-9f1bd7e33430))
+    (pin "2" (uuid c2676ae7-93fa-4db8-902c-af928d0a2087))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
@@ -1596,8 +1596,8 @@
     (property "Datasheet" "~" (at 195.58 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a6f82bb5-71f6-4a40-9f76-c8e72e59cb85))
-    (pin "2" (uuid 6796c4ce-a4fe-416c-94e8-f23fd79bb7f0))
+    (pin "1" (uuid b7cf5850-6099-44e9-8480-00b45033b7d5))
+    (pin "2" (uuid 26584502-e827-41d5-b740-575970e5fa89))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
@@ -1687,11 +1687,11 @@
     (property "Datasheet" "http://www.ti.com/lit/gpn/csd19533q5a" (at 83.82 73.66 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (pin "1" (uuid cfe19f5f-d2ca-43d2-b6fb-9e279a4f11c2))
-    (pin "2" (uuid 4071e2a0-6b59-49be-866d-58394d2ed256))
-    (pin "3" (uuid 693816d2-2e93-4928-bb8d-b485888b56f2))
-    (pin "4" (uuid 293f95cd-ad1d-4296-a0bb-b7b9fb59dc24))
-    (pin "5" (uuid 8db0b25c-460e-408b-80d3-1625c2bb5206))
+    (pin "1" (uuid d66a220b-ae7e-4843-b81d-1f237813a184))
+    (pin "2" (uuid 723b87f0-f580-402f-acf8-35ef45ef9c7a))
+    (pin "3" (uuid 355c4f91-b904-4169-b690-f64846adc59c))
+    (pin "4" (uuid 4b5c0ad7-33ad-473d-839d-7514bfbc5273))
+    (pin "5" (uuid 9a670076-7af1-4176-a8fe-9a1f9472d183))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
@@ -1719,8 +1719,8 @@
     (property "Datasheet" "~" (at 113.03 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2c4b34f2-c0d0-47e6-92d6-01cd2cef4630))
-    (pin "2" (uuid 87044e0c-4713-40c2-9461-4ac1d9aef291))
+    (pin "1" (uuid 149e3676-4408-44bb-b613-0c019f3e6ccf))
+    (pin "2" (uuid 1aec969f-7c4d-42b0-abe1-3d0909e73ecc))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
@@ -1815,7 +1815,7 @@
     (property "Datasheet" "~" (at 180.34 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0f11d76c-3ade-4968-b5cc-91ba96ea429e))
+    (pin "1" (uuid 043ed3e6-8237-4db1-b2f4-57452f0155c3))
     (instances
       (project "go-kart-esc"
         (path "/5a70b585-4866-4f79-8013-f2242aeded57/2f2eb473-a6d5-4b09-8c58-ce0c11f580af"
