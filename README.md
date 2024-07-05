@@ -1,2 +1,2 @@
 # go-kart-esc
- VROOM, 100A/100A 12-50V Dual Channel Brushed ESC
+ VROOM, 40A/40A 12-50V Dual Channel Brushed ESC
