@@ -4,7 +4,7 @@ set(CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD 23)
 
 
-project(socket-io-cpp)
+project(go-kart-esc)
 
 file(GLOB LIBEV_SRC ${CMAKE_SOURCE_DIR}/libev/*.c)
 add_library(ev ${LIBEV_SRC})
@@ -18,10 +18,6 @@ add_library(http ${HTTP_SRC})
 target_link_libraries(http net)
 
 
-add_executable(server tests/server.cpp)
-target_link_libraries(server net)
-add_executable(client tests/client.cpp)
-target_link_libraries(client net)
 # add_executable(http tests/http_test.cpp)
 # add_executable(parse tests/parse.cpp)
 # add_executable(hserv tests/http_server.cpp)
